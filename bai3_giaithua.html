@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Nhap so muon tinh giai thua" id="num">
+<input type="button" value="click!" onclick="giaithua()">
+<script>
+    function giaithua(a) {
+        a=parseInt(document.getElementById("num").value);
+        let gt = 1;
+        for (let i = 1; i <= a; i++) {
+            gt = gt * i;
+        }
+        alert(gt);
+    }
+
+</script>
+</body>
+</html>

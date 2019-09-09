@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x=prompt("Enter number 1: ");
+    let y=prompt("Enter number 2: ");
+    let z=prompt("Enter number 3: ")
+    function maxNUm(a, b, c) {
+        let max = a;
+        if (b >a || c >a) {
+            if (b > c) {
+                max = b;
+            }
+            else {
+                max = c;
+            }
+        }
+        return max;
+    }
+
+    alert(maxNUm(x, y, z));
+</script>
+</body>
+</html>

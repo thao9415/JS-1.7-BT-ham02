@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+        let num = parseInt(prompt("Nhap vao so phan tu cua mang: "));
+        let array1 = [];
+        for (i = 0; i < num; i++) {
+            let a = prompt("Mời nhập vào phần tử thứ " + i);
+            array1.push(a);
+        }
+        let n;
+        let first = 0;
+        let last = array1.length;
+        while (first<last) {
+            n = array1[first];
+            array1[first] = array1[last];
+            array1[last] = n;
+            first++;
+            last--;
+        }
+        alert(array1);
+</script>
+
+</body>
+</html>
